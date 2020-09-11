@@ -11,13 +11,12 @@ import (
 func main() {
 	content, err := ioutil.ReadFile("./adjectives.txt")
 	if err != nil {
-
-		//Do something
+		fmt.Printf("Oj, błąd wywaliło.")
 	}
 	lines := strings.Split(string(content), "\n")
 	content2, err := ioutil.ReadFile("./nouns.txt")
 	if err != nil {
-		//Do something
+		fmt.Printf("Oj, błąd wywaliło.")
 	}
 	lines2 := strings.Split(string(content2), "\n")
 	fmt.Printf("Czy chcesz liczbę w swoim nicku?")
